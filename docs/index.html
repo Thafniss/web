@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Currículo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe1a8;
+        }
+
+        header {
+            background-color:#723d46;
+            color:#ffe1a8;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        h2 {
+            text-align: center;
+            color:#472d30;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color:#ffe1a8;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        .perfil{
+
+        border-radius: 100%;
+        max-width: 200px;
+        border: 1px solid color(#cdb4db);
+
+}
+
+    </style>
+    
+</head>
+<body>
+    <header>
+
+        
+        <h1>Thafnis Cerrutto Ramos da Silva</h1>
+        <section> <img class="perfil" src="IMAGEM/artficial.jpg">
+        </section>
+        <p>
+            <a href="https://www.linkedin.com/in/thafnis-cerrutto-3a363a268/" target="_blank">LinkedIn</a> |
+            <a href="https://wa.me/5543999111848" target="_blank">Telefone</a>  |
+            <a href="mailto:thafnisramos3145@gmail.com?subject=&body=" target="_blank">E-mail</a> |
+            20 Anos
+        </p>
+    </header>
+
+    <div class="container"> </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divs com Comportamento de Mostrar/Ocultar</title>
+    <style>
+        /* Estilizando as divs visíveis */
+        .div-visivel {
+            text-align:right
+            width:250px;
+            height: 80px;
+            background-color: #b5838d;
+            margin: 10px;
+            padding: 10px;
+            cursor: pointer;
+             }
+
+        /* Estilizando as divs ocultas */
+        .div-oculta {
+            text-align: center;
+            display: none;
+            background-color:#fbc4ab;
+            margin: 10px;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="div-visivel" onclick="mostrarOcultar(1)"> <h2>Formação Acadêmica </h2></div>
+    <div class="div-oculta" id="oculta-1"> <section>
+        <ul>
+            <li>Ensino Médio Completo Aplicação - UEL - 2022</li>
+            <li>Graduando - Analise e Desenvolvimento de Sistemas - Positivo </li>
+        </ul>
+    </section></div>
+   
+
+    <div class="div-visivel" onclick="mostrarOcultar(2)"><h2>Experiência Profissional</h2></div>
+    
+    <div class="div-oculta" id="oculta-2">
+        <section>
+            <ul>
+                <li>Nome da Empresa - Cargo - Período</li>
+                <li>Outra Empresa - Outro Cargo - Período</li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="div-visivel" onclick="mostrarOcultar(3)"><h2>Habilidades e Competências</h2></div>
+   
+    <div class="div-oculta" id="oculta-3"> <section>
+        <ul>
+            <li>inglês - básico</li>
+            <li>Facilidade na comunicação Verbal</li>
+            <li>Conhecimentos em desenvolvimento web (HTML, CSS) e de programação (C e base de javaScript)</li>
+        </ul>
+    </section></div>
+
+    <div class="div-visivel" onclick="mostrarOcultar(4)"> <h2>Hobbies</h2></div>
+     <div class="div-oculta" id="oculta-4"><section>
+        <p>
+        <li>Correr: Dedico tempo regularmente à corrida como forma de manter um estilo de vida saudável e desafiar meus limites pessoais. Participei de várias corridas de 5 km em minha comunidade. </li>
+
+        <li>Atividades na Igreja: Sou ativo na minha igreja local, onde participo de eventos de voluntariado e grupos de oração. Isso me proporciona um senso de comunidade e a oportunidade de dar de volta à minha comunidade. </li>
+            
+        <li>Jogos Online: Desfruto de jogos online como forma de relaxamento e entretenimento. Além de ser uma atividade recreativa, essa paixão também me ensinou habilidades de trabalho em equipe, estratégia e resolução de problemas que podem ser aplicadas em ambientes profissionais. </li>
+            
+            
+        </p>
+        <div>
+            
+        </div>
+    </section></div>
+
+    <script>
+        function mostrarOcultar(id) {
+            var divOculta = document.getElementById("oculta-" + id);
+            
+            // Alternar a visibilidade da div oculta
+            if (divOculta.style.display === "none" || divOculta.style.display === "") {
+                divOculta.style.display = "block";
+            } else {
+                divOculta.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
